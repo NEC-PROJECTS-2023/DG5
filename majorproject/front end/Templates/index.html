@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html >
+<!--From https://codepen.io/frytyler/pen/EGdtg-->
+<head>
+  <meta charset="UTF-8">
+  <title>ML API</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  
+</head>
+
+<body style="background-color:powderblue;">
+ <div class="login">
+	<h1>Fifa Player Value in Euros</h1>
+
+     <!-- Main Input For Receiving Query to our ML -->
+    <form action="{{ url_for('predict')}}"method="post">
+    	<input type="text" name="international_reputation" placeholder="international_reputation" required="required" />
+        <input type="text" name="overall" placeholder="overall" required="required" />
+          <input type="text" name="potential" placeholder="potential" required="required" />
+            <input type="text" name="mentality_composure" placeholder="mentality_composure" required="required" />
+              <input type="text" name="age" placeholder="age" required="required" />
+               <input type="text" name="height_cm" placeholder="height_cm" required="required" />
+                <input type="text" name="weight_kg" placeholder="weight_kg" required="required" />
+                  <input type="text" name="shooting" placeholder="shooting" required="required" />
+                    <input type="text" name="passing" placeholder="passing" required="required" />
+                      <input type="text" name="dribbling" placeholder="dribbling" required="required" />
+
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+    </form>
+
+   <br>
+   <br>
+   {{ prediction_text }}
+   <p>Click the "Predict" button after entering all values. And it will predict the value of player</p>
+
+ </div>
+
+
+</body>
+</html>
