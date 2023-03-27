@@ -3,7 +3,7 @@
 
 # Team Members 
 Goli Bodhini(19471A05L6)
-Kandula-Vengamamba(19471A05M4)
+\nKandula-Vengamamba(19471A05M4)
 Valluri Sreevani(20475A0509)
 
 # Introduction
