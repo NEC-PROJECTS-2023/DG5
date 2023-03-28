@@ -1,5 +1,5 @@
 # DG5
-# Predicting the Value of Football Players 
+Predicting the Value of Football Players 
 
 ### Team Members 
 1. Goli Bodhini(19471A05L6)
